@@ -1,0 +1,160 @@
+:root {
+  --icon-cart: url(../images/icon-cart.svg);
+
+  --primary-color: hsl(158, 36%, 37%);
+  --fg-green: var(--primary-color);
+  --fg-dark-green: hsl(158, 42%, 18%);
+
+  --fg-black: hsl(212, 21%, 14%);
+  --fg-grey: hsl(228, 12%, 48%);
+  --fg-white: hsl(0, 0%, 100%);
+
+  --bg-cream: hsl(30, 38%, 92%);
+  --bg-white: hsl(0, 0%, 100%);
+
+  --preview-radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: var(--bg-cream);
+  height: 100vh;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.preview {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0;
+  width: 600px;
+  height: 450px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.product-img {
+  width: 300px;
+  border-top-left-radius: var(--preview-radius);
+  border-bottom-left-radius: var(--preview-radius);
+  object-fit: cover;
+}
+
+.product-info {
+  width: 300px;
+  padding: 30px;
+  background-color: var(--bg-white);
+  border-top-right-radius: var(--preview-radius);
+  border-bottom-right-radius: var(--preview-radius);
+}
+
+.product-category {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: var(--fg-grey);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+}
+
+.product-info .product-name {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+  color: var(--fg-black);
+}
+
+.product-info .product-desc {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.9em;
+  color: var(--fg-grey);
+}
+
+.product-info .prices {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.product-price {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+  color: var(--fg-green);
+  margin-right: 20px;
+}
+
+.product-old-price {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+  text-decoration: line-through;
+  color: var(--fg-grey);
+  font-size: 0.8em;
+}
+
+.button {
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.8em;
+  background-color: var(--primary-color);
+}
+
+.button-wrap {
+  color: var(--fg-white);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-cart {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background-color: var(--bg-white);
+  mask-image: var(--icon-cart);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 14px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
