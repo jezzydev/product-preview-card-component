@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor: Product Preview Card Solution](https://www.frontendmentor.io/solutions/simple-product-preview-card-using-html-and-css-6H3VKWrqFL)
+- Live Site URL: [product-preview-card-component](https://jezzydev.github.io/product-preview-card-component/)
 
 ## My process
 
@@ -48,7 +48,7 @@ Users should be able to:
 
 This challenge helped put what I learned about CSS, Flexbox, styling, masking in action.
 
-One way to center a blocked element horizontally and vertically:
+One way to center a block element horizontally and vertically:
 
 ```css
 body {
